@@ -42,7 +42,7 @@ export default function SigninScreen() {
   return (
     <KeyboardAvoidingView behavior="padding" style={styles.container}>
       <Text
-        style={{ color: colors.foreground, fontSize: 24, marginBottom: 20 }}
+        style={{ color: colors.foreground, fontSize: 24, marginBottom: 50 }}
       >
         Welcome to Vetcation
       </Text>
