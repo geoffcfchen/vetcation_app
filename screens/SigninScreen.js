@@ -85,24 +85,14 @@ export default function SigninScreen() {
             color={colors.secondary}
             onPress={handlePressSignIn}
           ></Button>
+        </View>
+        <View style={{ marginTop: 2 }}>
           <Button
             title={"Register"}
             color={colors.secondary}
             onPress={() => navigation.navigate("Profile")}
           ></Button>
         </View>
-        {/* <TouchableOpacity
-          style={{ marginTop: 15 }}
-          onPress={() =>
-            mode === "signUp" ? setMode("signIn") : setMode("signUp")
-          }
-        >
-          <Text>
-            {mode === "signUp"
-              ? "Already have an account? Sign in"
-              : "Don't have an account? Sign Up"}
-          </Text>
-        </TouchableOpacity> */}
       </View>
     </KeyboardAvoidingView>
   );
