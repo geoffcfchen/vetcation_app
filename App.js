@@ -7,6 +7,8 @@ import ContextWrapper from "./context/ContextWrapper";
 import { theme } from "./utils";
 import { NavigationContainer } from "@react-navigation/native";
 import SigninScreen from "./screens/SigninScreen";
+import ProfileScreen from "./screens/ProfileScreen";
+import HomeScreen from "./screens/HomeScreen";
 
 LogBox.ignoreLogs([
   "Setting a timer",
@@ -24,6 +26,12 @@ function App() {
           component={SigninScreen}
           options={{ headerShown: false }}
         ></Stack.Screen>
+        <Stack.Screen
+          name="Profile"
+          component={ProfileScreen}
+          options={{ headerShown: false }}
+        ></Stack.Screen>
+        <Stack.Screen name="Home" component={HomeScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

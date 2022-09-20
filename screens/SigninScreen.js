@@ -29,7 +29,7 @@ export default function SigninScreen() {
   }
 
   useEffect(() => {
-    // console.log(auth);
+    console.log("auth from SignIn page", auth);
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         // console.log(authUser);
